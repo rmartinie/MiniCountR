@@ -15,7 +15,7 @@ d’autres villes.
 
 ## Installation
 
-Vous pouvez installer la version de développement depuis
+Vous pouvez installer depuis
 [GitHub](https://github.com/) avec :
 
     # install.packages("remotes")
