@@ -1,0 +1,24 @@
+Package: MiniCountR
+Title: Client R pour l'API Publique Eco-Compteur
+Version: 0.0.0.9000
+Authors@R: 
+    person("Romain", "MARTINIE", , "romain.martinie@ens-rennes.fr", role = c("aut", "cre"))
+Description: Permet d'extraire les donnees de frequentation des compteurs
+    Eco-Compteur via les portails publics sans cle API privee.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    dplyr,
+    httr,
+    jsonlite,
+    lubridate,
+    purrr,
+    stats,
+    tibble,
+    tidyr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
