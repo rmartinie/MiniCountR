@@ -18,7 +18,7 @@ d’autres villes.
 Vous pouvez installer depuis GitHub avec :
 
     # install.packages("remotes")
-    remotes::install_github("VOTRE_PSEUDO/MiniCountR")
+    remotes::install_github("rmartinie/MiniCountR")
 
 ## Fonctionnalités
 
@@ -80,7 +80,7 @@ You can install from GitHub with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("YOUR_USERNAME/MiniCountR")
+remotes::install_github("rmartinie/MiniCountR")
 ```
 
 ## Features
