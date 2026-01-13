@@ -15,8 +15,7 @@ d’autres villes.
 
 ## Installation
 
-Vous pouvez installer depuis
-[GitHub](https://github.com/) avec :
+Vous pouvez installer depuis GitHub avec :
 
     # install.packages("remotes")
     remotes::install_github("VOTRE_PSEUDO/MiniCountR")
@@ -77,8 +76,7 @@ can be adapted for other cities.
 
 ## Installation
 
-You can install the development version from
-[GitHub](https://github.com/) with:
+You can install from GitHub with:
 
 ``` r
 # install.packages("remotes")
