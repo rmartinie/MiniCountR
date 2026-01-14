@@ -43,13 +43,21 @@ get_eco_data <- function(station, flowIds = NULL, debut, fin, interval = "4", id
 
     if (is.null(data) || length(data) == 0) return(NULL)
 
-    # Transformation en data.frame avec le pipe natif |>
+
+    # Transformation en data.frame
     df <- as.data.frame(data) |>
       stats::setNames(c("date", "count"))
 
-    # NETTOYAGE ROBUSTE DE LA DATE
-    # parse_date_time va tester plusieurs combinaisons pour éviter le "failed to parse"
-    df$date <- lubridate::parse_date_time(df$date, orders = c("ymd HMS", "ymd", "dmy HMS", "dmy"))
+    # PARSING SÉCURISÉ (Format US prioritaire pour cette API)
+    # On utilise 'mdy' car l'API renvoie 03/13/2015 pour le 13 Mars
+    df$date <- lubridate::parse_date_time(
+      df$date,
+      orders = c("mdy HMS", "mdy", "dmy HMS", "dmy"),
+      quiet = TRUE
+    )
+
+    # Conversion du count
+    df$count <- as.numeric(df$count)
 
     # On s'assure que count est bien numérique
     df$count <- as.numeric(df$count)
