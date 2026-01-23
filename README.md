@@ -23,8 +23,7 @@ Vous pouvez installer depuis GitHub avec :
 ## Fonctionnalités
 
 `get_stations()` : Récupère la liste des compteurs d’une ville avec
-leurs coordonnées GPS, leurs métadonnées et leurs identifiants
-techniques (flowIds).
+leurs coordonnées GPS, leurs métadonnées...
 
 `get_eco_data()` : Télécharge les données pour un compteur spécifique
 (au pas horaire, journalier, hebdomadaire ou mensuel).
@@ -86,7 +85,7 @@ remotes::install_github("rmartinie/MiniCountR")
 ## Features
 
 `get_stations()` : Retrieves the list of counters in a city with GPS
-coordinates, metadata, and technical identifiers (flowIds).
+coordinates, metadata...
 
 `get_eco_data()` : Downloads data for a specific counter (hourly, daily,
 weekly, or monthly).
